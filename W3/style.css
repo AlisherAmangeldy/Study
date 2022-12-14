@@ -1,0 +1,87 @@
+body {
+  background-color: antiquewhite;
+  background-size: 100%;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+}
+
+table th {
+  border: 1px solid black;
+}
+
+tr > td {
+  border: 1px solid black;
+}
+
+.center {
+  text-align: center;
+}
+
+tbody tr td + td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+th {
+  font-size: 25px;
+  padding: 5px 5px 5px 5px;
+}
+
+.lastline {
+  padding: 1px 1px 3px 1px;
+}
+
+.first,
+.second,
+.third {
+  font-size: 25px;
+  padding-left: 45px;
+}
+
+ol > li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+ul > li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+dt {
+  font-size: 20px;
+  margin: 5px 10px;
+}
+
+dt ~ dd {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 10px 10px;
+}
