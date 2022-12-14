@@ -1,61 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other page</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <title>Регистрация</title>
     <style>
-      #signLink:hover {
-        color: brown;
+      label {
+        display: block;
+        font-family: "Arial", sans-serif;
+      }
+
+      input {
+        margin-bottom: 10px;
+        padding: 5px 5px;
+        border: 2px solid black;
+        border-radius: 4px;
+      }
+
+      button {
+        margin-top: 10px;
+      }
+
+      button:hover {
+        color: Brown;
+      }
+
+      #user_info {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 32px;
+      }
+
+      .distance {
+        margin-top: 10px;
+      }
+
+      body {
+        background-color: antiquewhite;
+        background-size: 100%;
+      }
+
+      legend {
+        font-size: 32px;
       }
     </style>
-    <title>Вход</title>
   </head>
-  <body style="background-color: antiquewhite; background-size: 100%">
-    <main>
-      <form action="main page.html" target="_blank">
-        <fieldset style="margin-top: 10px; margin-bottom: 10px">
-          <legend
-            style="
-              font-family: Georgia, 'Times New Roman', Times, serif;
-              font-size: 32px;
-            "
-          >
-            Вход в систему
-          </legend>
-          <label
-            for="email"
-            style="display: block"
-            style="font-family: Arial, Helvetica, sans-serif"
-            ><input
-              type="email"
-              id="email"
-              style="
-                margin-bottom: 10px;
-                border: 2px solid black;
-                border-radius: 4px;
-              "
-              required
-            />Введите электронную почту</label
-          >
-          <label
-            for="pass"
-            style="display: block"
-            style="font-family: Arial, Helvetica, sans-serif"
-            ><input
-              type="password"
-              id="pass"
-              style="
-                margin-bottom: 10px;
-                border: 2px solid black;
-                border-radius: 4px;
-              "
-              required
-            />Введите пароль</label
-          >
-        </fieldset>
-        <button id="signLink">Войти</button>
-      </form>
-    </main>
+  <body>
+    <form action="login.html" target="_blank">
+      <fieldset class="distance">
+        <legend id="user_info">Информация о пользователе</legend>
+        <label for="username"
+          ><input type="text" id="username" required />Имя пользователя</label
+        >
+        <label for="birth"
+          ><input type="date" id="birth" required />Дата рождения</label
+        >
+        <label for="phone"
+          ><input type="tel" id="phone" required />Телефон</label
+        >c
+        <label for="email"
+          ><input type="email" id="email" required />Электронная почта</label
+        >
+      </fieldset>
+      <fieldset class="distance">
+        <legend>Пароль</legend>
+        <label for="pass"
+          ><input type="password" id="pass" required />Пароль</label
+        >
+        <label for="checkpass"
+          ><input type="password" id="checkpass" required />Повторите
+          пароль</label
+        >
+      </fieldset>
+      <fieldset class="distance">
+        <legend>Пол</legend>
+        <label for="male"
+          ><input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+          />Мужской</label
+        >
+        <label for="female"
+          ><input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+          />Женский</label
+        >
+      </fieldset>
+      <fieldset class="distance">
+        <label for="information"
+          ><input
+            type="checkbox"
+            id="information"
+            name="information"
+            value="emailinfo"
+          />Получать рассылку на почту</label
+        >
+      </fieldset>
+      <button>Перейти на страницу входа</button>
+    </form>
   </body>
 </html>
