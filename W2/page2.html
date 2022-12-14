@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/page2.html" aria-current="page">Other page</a>
+      <a href="/page3.html">Third page</a>
+    </nav>
+    <main>
+      <form action="page3.html" target="_blank">
+        <fieldset>
+          <label for="email"><input type="email" id="email">Введите электронную почту</label>
+          <label for="pass"><input type="password" id="pass">Введите пароль</label>
+        </fieldset>
+          <button>Войти</button>
+      </form>
+    </main>
+  </body>
+</html>

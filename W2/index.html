@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+      <a href="/page3.html">Third page</a>
+    </nav>
+    <main>
+      <form action="page2.html" target="_blank">
+        <fieldset>
+          <legend>Информация о пользователе</legend>
+          <label for="username"><input type="text" id="username">Имя пользователя</label>
+          <label for="birth"><input type="date" id="birth">Дата рождения</label>
+          <label for="phone"><input type="tel" id="phone">Телефон</label>
+          <label for="email"><input type="email" id="email">Электронная почта</label>
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <label for="pass"><input type="password" id="pass">Пароль</label>
+          <label for="checkpass"><input type="password" id="checkpass">Повторите пароль</label>
+        </fieldset>
+        <fieldset>
+          <legend>Пол</legend>
+          <label for="male"><input type="radio" id="male" name="gender" value="male">Мужской</label>
+          <label for="female"><input type="radio" id="female" name="gender" value="female">Женский</label>
+        </fieldset>
+        <fieldset>
+          <label for="information"><input type="checkbox" id="information" name="information" value="emailinfo">Получать рассылку на почту</label>
+        </fieldset>
+          <button>Зарегистрироваться</button>
+      </form>
+    </main>
+  </body>
+</html>
