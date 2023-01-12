@@ -1,0 +1,95 @@
+/*
+ colors
+ bg #ffff
+ colors for buttons #00FFFF	
+ colors for buttons operations 	#7F00FF
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #daf0ff;
+}
+
+@media screen and (orientation: portrait) {
+  h1 {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.calc {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-family: "Times New Roman", Times, serif;
+  background: #f8f8ff;
+  color: #38b9ff;
+  padding: 18px;
+}
+
+.calc_screen {
+  height: 125px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.calc_screen p {
+  text-align: right;
+  font-size: 4rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 10px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background: #f0ffff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.c {
+  width: 130px;
+  border-radius: 30px;
+}
+
+.equal {
+  width: 130px;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn:active {
+  filter: brightness(80%);
+}
+
+.btn.bg-dark-purple {
+  background: #87ceeb;
+}
+
+.btn.bg-cyan {
+  background: #afeeee;
+}
